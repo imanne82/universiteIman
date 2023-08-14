@@ -1,0 +1,31 @@
+@media (max-width: 825px) {
+    .form {
+        width: 250px;
+        height: 400px;
+    }
+
+    .getData a {
+        display: block;
+    }
+
+    .laterSingUP, .laterLogIn {
+        display: none;
+    }
+
+    .getData .inputGetData input {
+        width: 180px;
+        font-size: 10px;
+    }
+
+    .getData .inputGetData label {
+        font-size: 12px;
+        margin-right: 1rem;
+    }
+    .btn-Login {
+        width: 80px;
+        font-size: 12px;
+    }
+    .getData .inputGetData a{
+        font-size: 12px;
+    }
+}

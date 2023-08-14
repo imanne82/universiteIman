@@ -1,0 +1,171 @@
+@font-face {
+    font-family: iranSans;
+    src: url("../FontsIranSans/ttf/IRANSansWeb(FaNum).ttf") format("opentype"),
+    url("../FontsIranSans/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("opentype"),
+    url("../FontsIranSans/ttf/IRANSansWeb(FaNum)_Light.ttf") format("opentype"),
+    url("../FontsIranSans/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("opentype"),
+    url("../FontsIranSans/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("opentype");
+}
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("../Fonts Booter/Booter - Zero Zero.woff") format("woff"),
+    url("../Fonts Booter/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --bgColor: #526d82;
+    --txtColor: #454647;
+    --bgColor2: #dde6ed;
+    --bgColor3: #f6f1f1;
+    --bgColor4: #27374d;
+    --bgColor5: #db0042;
+}
+
+* {
+    direction: rtl;
+    font-family: iranSans, 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+/*                                        name site           */
+#nameSIte {
+    display: flex;
+    justify-content: center;
+    background: var(--bgColor2);
+}
+
+#nameSIte h1 {
+    font-family: "Booter - Zero Zero", sans-serif;
+    font-size: 6rem;
+}
+/*                       navBar                     */
+#navBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--bgColor);
+}
+
+#navBar .listMenu {
+    display: flex;
+    margin: 1rem;
+}
+
+#navBar .listMenu li a {
+    color: var(--bgColor2);
+    margin-right: 1rem;
+}
+
+#navBar .listMenu li a:hover {
+    text-shadow: 0 0 1px var(--bgColor2);
+}
+#container {
+    width: 100%;
+    display: flex;
+}
+
+/*                                             divProduct                         */
+.divProduct {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    min-height: 100vh;
+    width: 40%;
+    height: 100vh;
+    background-color: var(--bgColor4);
+    overflow-y: scroll;
+}
+
+.product {
+    background-color: var(--bgColor2);
+    width: 98%;
+    height: 180px;
+    display: flex;
+    margin: .5rem .5rem .5rem 0;
+}
+
+.product div {
+    margin-right: 1rem;
+}
+
+.product .img img {
+    margin-top: .5rem;
+    width: 200px;
+    height: 130px;
+}
+
+.product .details, .inputBtn, .price {
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column;
+}
+
+.inputBtn input {
+    width: 4rem;
+    height: 2rem;
+    padding-right: 1rem;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+.removeProduct {
+    border-radius: 5px;
+    height: 2rem;
+    width: 8rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.removeProduct:hover {
+    color: white;
+    background-color: var(--bgColor5);
+}
+
+/*                                      btn removeAll Cart                                */
+.removeAllCart button {
+    border-radius: 5px;
+    margin-top: .5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    background-color: var(--bgColor5);
+    height: 3rem;
+    width: 100%;
+}
+
+/*                                     detailsTotalPrice                                 */
+.detailsTotalPrice {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 100vh;
+    background-color: var(--bgColor3);
+}
+
+.totalBy {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    box-shadow: 0 12px 20px black;
+    border-radius: 20px;
+    margin: 5rem auto;
+    width: 80%;
+    height: 50%;
+    background-color: rgb(22 22 23 / 80%);
+    backdrop-filter: blur(20px);
+}
+
+.totalBy div {
+    color: white;
+    font-size: 18px;
+    margin-right: 1rem;
+}

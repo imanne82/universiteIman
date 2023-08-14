@@ -1,0 +1,86 @@
+body{
+    background: #454647;
+}
+#container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .logIn  , .container .singUp {
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    margin-right: .1rem ;
+    width: 400px;
+    height: 500px;
+    background: var(--bgColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.formStyle-div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    background: var(--bgColor2);
+    border: 3px solid #f6f1f1;
+    box-shadow: 0 0 5px #f6f1f1;
+}
+
+.getData .inputGetData input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1rem;
+}
+
+.btn-Login {
+    width: 5rem;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+}
+
+.btn-Login:hover {
+    background: var(--bgColor);
+}
+.singUp .btn-Login:hover{
+    background: #e76161;
+
+}
+.getData a{
+    display: none;
+}
+
+.laterLogIn  .btn-Login, .singUp .btn-Login  {
+    width: 9rem;
+}
+.singUp .form{
+    background: #e76161;
+}
+.singUp .formStyle-div{
+    background: #f99b7d;
+}
+.logIn .laterLogIn , .singUp .getData{
+    display: none;
+}
