@@ -334,11 +334,11 @@ header div {
 }
 
 .product {
-   margin: 20px 10px 25px 0;*/
+   margin: 20px 10px 25px 0;
    width: 290px;
    height: 416px;
    background: var(--bgColor2);
-   border-radius: 10px;*/
+   border-radius: 10px;
    box-shadow: 0 0 5px var(--bgColor2);
    font-weight: bold;
    transition: .4s;
